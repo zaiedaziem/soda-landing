@@ -41,12 +41,18 @@ Any other static server works too (`npx serve`, VS Code Live Server, GitHub Page
 - Hover near a berry — it's pushed away and spins faster.
 - Click **Zero Lime** or **Diet Classic** — the background morphs, the can spins 720°
   and changes its label, and the berries implode, swap (cherry ↔ blueberry) and burst back out.
+- Scroll down, or use the nav: **Ingredients**, **Taste**, **Eco** and **Reviews** reveal
+  as they come into view, and the nav highlights the section you're in.
+- In **Taste**, the "Try …" button scrolls back up and switches the flavor through the hero.
 
 ## Layout
 
 ```
-index.html        markup: header, hero columns, 3D models, flavor cards
-css/styles.css    theme variables, layout, glass nav, cards, keyframes
-js/main.js        can tilt, flavor switch, berry repulsion/float, leaves, bubbles
-notes/            the original build spec
+index.html          markup: header, hero, then the Ingredients / Taste / Eco / Reviews
+                    sections, CTA and footer
+css/styles.css      the hero, exactly as specified (theme variables, glass nav, cards, keyframes)
+css/sections.css    everything below the hero, plus the change that lets the page scroll
+js/main.js          hero: can tilt, flavor switch, berry repulsion/float, leaves, bubbles
+js/sections.js      nav scrolling + active state, scroll reveals, count-ups, Taste buttons
+notes/              the original build spec
 ```

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Inter:wght@400;500&family=Manrope:wght@400;700&family=Galada&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sections.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
@@ -26,16 +27,16 @@
             <span>Soda</span>
         </div>
         <nav class="nav glass">
-            <a href="#" class="nav-item active">Home</a>
-            <a href="#" class="nav-item">Ingredients</a>
-            <a href="#" class="nav-item">Taste</a>
-            <a href="#" class="nav-item">Eco</a>
-            <a href="#" class="nav-item">Reviews</a>
+            <a href="#home" class="nav-item active">Home</a>
+            <a href="#ingredients" class="nav-item">Ingredients</a>
+            <a href="#taste" class="nav-item">Taste</a>
+            <a href="#eco" class="nav-item">Eco</a>
+            <a href="#reviews" class="nav-item">Reviews</a>
         </nav>
         <button class="contact-btn">Contact Us</button>
     </header>
 
-    <main class="hero">
+    <main class="hero" id="home">
         <div class="hero-content">
             <!-- Floating leaves (far background) -->
             <div class="leaves-container">
@@ -134,6 +135,231 @@
         </div>
     </main>
 
+    <!-- ===================== INGREDIENTS ===================== -->
+    <section class="section" id="ingredients" aria-labelledby="ingredients-title">
+        <div class="section-inner">
+            <div class="section-head reveal">
+                <span class="eyebrow">Ingredients</span>
+                <h2 class="section-title" id="ingredients-title">Nothing to hide</h2>
+                <p class="section-lead">Six things go into every can. No sugar, no syrups, no long words you have to look up.</p>
+            </div>
+
+            <div class="ingredients-layout">
+                <div class="showcase reveal">
+                    <div class="showcase-glow"></div>
+                    <img class="flavor-img flavor-classic" src="https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/Green%20Soda.png" alt="A can of Diet Classic">
+                    <img class="flavor-img flavor-blue" src="https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/Blue%20Soda.png" alt="A can of Zero Lime">
+                </div>
+
+                <div class="ingredient-grid">
+                    <article class="glass-card ingredient-card reveal">
+                        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3C12 3 6 10 6 14a6 6 0 0 0 12 0c0-4-6-11-6-11Z"/></svg></span>
+                        <h3>Sparkling Water</h3>
+                        <p>Filtered three times and carbonated cold for a sharper, longer-lasting fizz.</p>
+                    </article>
+                    <article class="glass-card ingredient-card reveal">
+                        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><circle cx="16.5" cy="16" r="3.5"/><path d="M8 11c1-4 4-7 8-8M16.5 12.5C16 9 16 6 16 3"/></svg></span>
+                        <h3>Real Fruit Essence</h3>
+                        <p>Cold-pressed cherry for Classic, Persian lime for Zero Lime. Nothing artificial.</p>
+                    </article>
+                    <article class="glass-card ingredient-card reveal">
+                        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15Z"/><path d="M5 19 13 11"/></svg></span>
+                        <h3>Stevia Leaf</h3>
+                        <p>Plant-based sweetness with zero calories and no bitter aftertaste.</p>
+                    </article>
+                    <article class="glass-card ingredient-card reveal">
+                        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></span>
+                        <h3>Citric Acid</h3>
+                        <p>A bright citrus edge that keeps every sip crisp from first to last.</p>
+                    </article>
+                    <article class="glass-card ingredient-card reveal">
+                        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg></span>
+                        <h3>Electrolytes</h3>
+                        <p>A touch of magnesium and potassium, so refreshment actually refreshes.</p>
+                    </article>
+                    <article class="glass-card ingredient-card reveal">
+                        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></span>
+                        <h3>Natural Flavors</h3>
+                        <p>Botanical extracts that round off the finish. Caffeine-free, always.</p>
+                    </article>
+                </div>
+            </div>
+
+            <dl class="nutrition glass-card reveal" aria-label="Nutrition per 330 ml can">
+                <div><dt>Calories</dt><dd><span class="count" data-to="0">0</span></dd></div>
+                <div><dt>Sugar</dt><dd><span class="count" data-to="0">0</span>g</dd></div>
+                <div><dt>Carbs</dt><dd><span class="count" data-to="0">0</span>g</dd></div>
+                <div><dt>Sodium</dt><dd><span class="count" data-to="35">0</span>mg</dd></div>
+                <div><dt>Per can</dt><dd><span class="count" data-to="330">0</span>ml</dd></div>
+            </dl>
+        </div>
+    </section>
+
+    <!-- ===================== TASTE ===================== -->
+    <section class="section" id="taste" aria-labelledby="taste-title">
+        <div class="section-inner">
+            <div class="section-head reveal">
+                <span class="eyebrow">Taste</span>
+                <h2 class="section-title" id="taste-title">Two moods, zero sugar</h2>
+                <p class="section-lead">Pick the one that matches your afternoon. Switching here switches the whole page.</p>
+            </div>
+
+            <div class="taste-grid">
+                <article class="glass-card taste-card reveal" data-flavor="classic">
+                    <img class="taste-can" src="https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/Green%20Soda.png" alt="">
+                    <span class="taste-tag">Cherry · Classic</span>
+                    <h3 class="taste-name">Diet Classic</h3>
+                    <p class="taste-copy">Dark cherry up front, a soft vanilla middle and a clean, dry finish. The one that started it all.</p>
+                    <ul class="chips">
+                        <li>Dark cherry</li><li>Vanilla</li><li>Crisp finish</li>
+                    </ul>
+                    <div class="meters">
+                        <div class="meter"><span>Sweetness</span><div class="meter-track"><div class="meter-fill" style="--v: 62%"></div></div><span>62</span></div>
+                        <div class="meter"><span>Fizz</span><div class="meter-track"><div class="meter-fill" style="--v: 78%"></div></div><span>78</span></div>
+                        <div class="meter"><span>Tartness</span><div class="meter-track"><div class="meter-fill" style="--v: 35%"></div></div><span>35</span></div>
+                        <div class="meter"><span>Fruit</span><div class="meter-track"><div class="meter-fill" style="--v: 84%"></div></div><span>84</span></div>
+                    </div>
+                    <p class="pairing"><strong>Pairs with</strong> burgers, popcorn, late-night movies.</p>
+                    <button class="primary-btn flavor-btn" data-flavor="classic">
+                        <span class="when-off">Try Diet Classic</span><span class="when-on">Now pouring</span>
+                        <span class="plus-icon">+</span>
+                    </button>
+                </article>
+
+                <article class="glass-card taste-card reveal" data-flavor="blue">
+                    <img class="taste-can" src="https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/Blue%20Soda.png" alt="">
+                    <span class="taste-tag">Lime · Zero</span>
+                    <h3 class="taste-name">Zero Lime</h3>
+                    <p class="taste-copy">Zesty Persian lime with a hint of blueberry and an ice-cold, mineral snap. Built for hot days.</p>
+                    <ul class="chips">
+                        <li>Persian lime</li><li>Blueberry</li><li>Mineral snap</li>
+                    </ul>
+                    <div class="meters">
+                        <div class="meter"><span>Sweetness</span><div class="meter-track"><div class="meter-fill" style="--v: 44%"></div></div><span>44</span></div>
+                        <div class="meter"><span>Fizz</span><div class="meter-track"><div class="meter-fill" style="--v: 90%"></div></div><span>90</span></div>
+                        <div class="meter"><span>Tartness</span><div class="meter-track"><div class="meter-fill" style="--v: 72%"></div></div><span>72</span></div>
+                        <div class="meter"><span>Fruit</span><div class="meter-track"><div class="meter-fill" style="--v: 66%"></div></div><span>66</span></div>
+                    </div>
+                    <p class="pairing"><strong>Pairs with</strong> tacos, sushi, the first warm day of spring.</p>
+                    <button class="primary-btn flavor-btn" data-flavor="blue">
+                        <span class="when-off">Try Zero Lime</span><span class="when-on">Now pouring</span>
+                        <span class="plus-icon">+</span>
+                    </button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ECO ===================== -->
+    <section class="section" id="eco" aria-labelledby="eco-title">
+        <model-viewer class="eco-leaf" src="https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/leaves.glb" environment-image="neutral" exposure="1.0" interaction-prompt="none" auto-rotate rotation-per-second="12deg" camera-orbit="45deg 75deg 105%" aria-hidden="true"></model-viewer>
+        <div class="section-inner">
+            <div class="section-head reveal">
+                <span class="eyebrow">Eco</span>
+                <h2 class="section-title" id="eco-title">Good to the last can</h2>
+                <p class="section-lead">Aluminium is the only packaging that can be recycled forever. So that's all we use.</p>
+            </div>
+
+            <div class="eco-stats">
+                <div class="glass-card eco-stat reveal"><span class="stat-num"><span class="count" data-to="100">0</span>%</span><span class="stat-label">Recyclable can, lid and tab</span></div>
+                <div class="glass-card eco-stat reveal"><span class="stat-num"><span class="count" data-to="73">0</span>%</span><span class="stat-label">Recycled aluminium in every can</span></div>
+                <div class="glass-card eco-stat reveal"><span class="stat-num"><span class="count" data-to="60">0</span></span><span class="stat-label">Days from recycling bin back to shelf</span></div>
+                <div class="glass-card eco-stat reveal"><span class="stat-num"><span class="count" data-to="0">0</span></span><span class="stat-label">Plastic rings, wraps or straws</span></div>
+            </div>
+
+            <ol class="eco-steps">
+                <li class="glass-card reveal"><span class="step-num">01</span><h3>Drink</h3><p>Enjoy it cold. Rinse it if you're feeling thorough.</p></li>
+                <li class="glass-card reveal"><span class="step-num">02</span><h3>Recycle</h3><p>Into any metals bin. Crushed or whole, both work.</p></li>
+                <li class="glass-card reveal"><span class="step-num">03</span><h3>Reborn</h3><p>Melted, rolled and refilled. Same can, new fizz.</p></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ===================== REVIEWS ===================== -->
+    <section class="section" id="reviews" aria-labelledby="reviews-title">
+        <div class="section-inner">
+            <div class="section-head reveal">
+                <span class="eyebrow">Reviews</span>
+                <h2 class="section-title" id="reviews-title">Loved by the fizz-curious</h2>
+            </div>
+
+            <div class="rating-summary reveal">
+                <span class="rating-big"><span class="count" data-to="4.8" data-decimals="1">0</span></span>
+                <div>
+                    <div class="stars" aria-label="4.8 out of 5 stars">★★★★★</div>
+                    <p>from <span class="count" data-to="2400">0</span>+ reviews</p>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <figure class="glass-card review-card reveal">
+                    <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <blockquote>“Tastes like the real thing without the 3 pm crash. I've swapped my afternoon cola completely.”</blockquote>
+                    <figcaption><span class="avatar">M</span><span><strong>Maya R.</strong><small>Diet Classic</small></span></figcaption>
+                </figure>
+                <figure class="glass-card review-card reveal">
+                    <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <blockquote>“Zero Lime is dangerously good. The fizz actually lasts until the bottom of the can.”</blockquote>
+                    <figcaption><span class="avatar">J</span><span><strong>Jonah P.</strong><small>Zero Lime</small></span></figcaption>
+                </figure>
+                <figure class="glass-card review-card reveal">
+                    <div class="stars" aria-label="4 out of 5 stars">★★★★<span class="star-off">★</span></div>
+                    <blockquote>“Not too sweet, which is exactly what I wanted. The cherry is subtle and natural.”</blockquote>
+                    <figcaption><span class="avatar">A</span><span><strong>Aisha K.</strong><small>Diet Classic</small></span></figcaption>
+                </figure>
+                <figure class="glass-card review-card reveal">
+                    <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <blockquote>“Love that it's just a can — no plastic rings. Tastes great and I feel good recycling it.”</blockquote>
+                    <figcaption><span class="avatar">L</span><span><strong>Luca B.</strong><small>Zero Lime</small></span></figcaption>
+                </figure>
+                <figure class="glass-card review-card reveal">
+                    <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <blockquote>“My go-to mixer now. Lime plus a squeeze of fresh mint is ridiculous.”</blockquote>
+                    <figcaption><span class="avatar">S</span><span><strong>Sofia T.</strong><small>Zero Lime</small></span></figcaption>
+                </figure>
+                <figure class="glass-card review-card reveal">
+                    <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <blockquote>“The design alone got me to try it. The taste is why I keep buying it.”</blockquote>
+                    <figcaption><span class="avatar">D</span><span><strong>Daniel O.</strong><small>Diet Classic</small></span></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CTA + FOOTER ===================== -->
+    <section class="section section-end" id="contact" aria-labelledby="cta-title">
+        <div class="section-inner">
+            <div class="glass-card cta-band reveal">
+                <div>
+                    <h2 class="section-title" id="cta-title">Ready for zero?</h2>
+                    <p class="section-lead">Free delivery on your first 12-pack. Questions? <a href="mailto:hello@soda.example">hello@soda.example</a></p>
+                </div>
+                <button class="primary-btn">
+                    Shop Now
+                    <span class="plus-icon">+</span>
+                </button>
+            </div>
+
+            <footer class="site-footer">
+                <div class="logo">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                        <path d="M12 8V16M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <span>Soda</span>
+                </div>
+                <nav class="footer-nav" aria-label="Footer">
+                    <a href="#home">Home</a>
+                    <a href="#ingredients">Ingredients</a>
+                    <a href="#taste">Taste</a>
+                    <a href="#eco">Eco</a>
+                    <a href="#reviews">Reviews</a>
+                </nav>
+                <p class="copyright">© 2025 Soda. Zero sugar, zero compromise.</p>
+            </footer>
+        </div>
+    </section>
+
     <svg style="position: absolute; width: 0; height: 0; opacity: 0; pointer-events: none;">
         <filter id="frosted">
             <feTurbulence type="fractalNoise" baseFrequency="0.0125" numOctaves="3" result="noise" />
@@ -147,6 +373,7 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/sections.js"></script>
 </body>
 
 </html>
