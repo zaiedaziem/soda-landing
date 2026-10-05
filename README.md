@@ -4,18 +4,18 @@ A 3D soda can floats and follows your cursor while berries scatter from your tou
 and the whole world shifts color when you pick a flavor.
 
 Plain HTML, CSS and JavaScript — no build step. GSAP and Google's `<model-viewer>`
-load from CDNs; every model and image loads from `ASSET_BASE_URL` in `js/main.js`.
+load from CDNs; every model and image lives in `assets/` (the path is `ASSET_BASE_URL` in `js/main.js`).
 
 ## Requirements
 
 - Python 3 (only to serve the files — nothing to install, no build step)
 - A modern browser with WebGL (Chrome, Edge, Firefox, Safari)
-- An internet connection: fonts, GSAP, model-viewer and every model/image load from CDNs
+- An internet connection for the libraries and fonts (GSAP, model-viewer, Google Fonts) — all models and images are local, in `assets/`
 
 ## Run it
 
-Serve the folder rather than double-clicking `index.html` — the 3D models are fetched
-from another origin, which browsers handle reliably only over `http://`.
+Serve the folder rather than double-clicking `index.html` — the 3D models are loaded
+with `fetch`, which browsers block for pages opened from `file://`.
 
 1. Open a terminal in the project folder.
 2. Start a static server:
@@ -54,5 +54,6 @@ css/styles.css      the hero, exactly as specified (theme variables, glass nav, 
 css/sections.css    everything below the hero, plus the change that lets the page scroll
 js/main.js          hero: can tilt, flavor switch, berry repulsion/float, leaves, bubbles
 js/sections.js      nav scrolling + active state, scroll reveals, count-ups, Taste buttons
+assets/             3D models, can images and textures, bubble
 notes/              the original build spec
 ```

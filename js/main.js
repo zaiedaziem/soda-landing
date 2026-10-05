@@ -1,6 +1,6 @@
 // Soda — can tilt, flavor switch, berry repulsion/float, leaves, bubbles.
 // Verbatim from the spec; only the asset paths point at ASSET_BASE_URL.
-const ASSET_BASE_URL = 'https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d';
+const ASSET_BASE_URL = 'assets';
 
 const modelViewer = document.querySelector('#product-model');
 const berriesFG = document.querySelector('.berries-container');
@@ -16,8 +16,8 @@ let greenTexture = null;
 // Preload textures & Warm up shaders
 modelViewer.addEventListener('load', async () => {
     try {
-        blueTexture = await modelViewer.createTexture(`${ASSET_BASE_URL}/blue%20base%20color.jpg`);
-        greenTexture = await modelViewer.createTexture(`${ASSET_BASE_URL}/green%20base%20color.jpg`);
+        blueTexture = await modelViewer.createTexture(`${ASSET_BASE_URL}/blue-base-color.jpg`);
+        greenTexture = await modelViewer.createTexture(`${ASSET_BASE_URL}/green-base-color.jpg`);
 
         // Shader Warm-up: Briefly apply textures to compile shaders
         if (modelViewer.model) {
